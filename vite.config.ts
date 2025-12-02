@@ -6,12 +6,5 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     emptyOutDir: true,
-    rollupOptions: {
-      input: 'index.tsx', // Direct input for script generation
-      output: {
-        entryFileNames: 'index.js',
-        assetFileNames: 'assets/[name].[ext]',
-      },
-    },
   },
 });
