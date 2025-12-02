@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="https://raw.githubusercontent.com/jakedean9903/ExtremeFitnessImages/main/extremefitnesslogo.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Extreme Fitness - Modern gym facility with expert trainers and varied classes." />
+    <title>Extreme Fitness</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                DEFAULT: '#0B5FFF', // Deep Blue
+                light: '#3C8DFF',   // Soft Blue
+              },
+              dark: {
+                DEFAULT: '#0F1724', // Dark slate
+                blue: '#0A2540',
+              },
+              neutral: {
+                bg: '#F6FAFF',
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+              display: ['Poppins', 'Impact', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      :root {
+        --blue-deep: #0B5FFF;
+        --blue-accent: #3C8DFF;
+        --bg: #F6FAFF;
+        --text-dark: #0F1724;
+      }
+      
+      .btn-primary {
+        background-color: var(--blue-deep);
+        color: white;
+        outline: none;
+      }
+      .btn-primary:hover {
+        background-color: var(--blue-accent);
+      }
+      .btn-primary:focus, .btn-primary:active {
+        background-color: var(--blue-deep) !important;
+        color: white !important;
+        box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
+        outline: 3px solid rgba(11,95,255,0.18);
+        outline-offset: 3px;
+      }
+
+      .btn-outline {
+        background-color: transparent;
+        border: 2px solid white;
+        color: white;
+      }
+      .btn-outline:hover {
+        background-color: white;
+        color: var(--blue-deep);
+      }
+      .btn-outline:focus, .btn-outline:active {
+        background-color: rgba(11, 95, 255, 0.2);
+        color: white !important;
+        border-color: white;
+      }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "vite": "https://aistudiocdn.com/vite@^7.2.6",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1",
+    "clsx": "https://aistudiocdn.com/clsx@^2.1.1"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="./dist/index.js"></script>
+  </body>
+</html>
